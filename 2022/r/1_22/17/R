@@ -1,0 +1,59 @@
+ on learning basics, lambda is done. will learn today and in morning python raised keyword, Generator ,with keywoard+exception handeling
+
+///////////////////////////////////////////////////
+
+
+I have these doubt will cover up . good nigh https://realpython.com/python-lambda/#lambda-expression-abuses
+topic 
+	pYTHON lambda and regular function
+		Decorators		https://realpython.com/primer-on-python-decorators/
+		CLOSURE(WHAT ARE THE USECASE
+		Evaluation Time
+		unittest and doctest.?
+
+
+???????
+	if _name=='main_':
+		unittest.main(verbosity=2)
+	
+	doctest(what is doctest)		https://realpython.com/python-testing/
+	
+https://www.python.org/dev/peps/
+	HOW TO UTILIZE THE PYTHON STYLE GUIDE
+
+////////////////////////////////////////////////////////////
+
+
+i like the way doc testing work  \n 
+addtwo = lambda x: x + 2
+addtwo._doc_ = """Add 2 to a number.
+    >>> addtwo(2)
+    4
+    >>> addtwo(2.2)
+    4.2
+    >>> addtwo(3) # Should fail
+    6
+    """
+
+if _name_ == '_main_':
+    import doctest
+    doctest.testmod(verbose=True)
+    
+    
+    ///////////////////////////////////////////////////////////LAMBDA EXPRESSION ABSUE
+    
+    class Car:
+    """Car with methods as lambda functions."""
+    def __init__(self, brand, year):
+        self.brand = brand
+        self.year = year
+
+    brand = property(lambda self: getattr(self, '_brand'),
+                     lambda self, value: setattr(self, '_brand', value))
+
+    year = property(lambda self: getattr(self, '_year'),
+                    lambda self, value: setattr(self, '_year', value))
+
+    __str__ = lambda self: f'{self.brand} {self.year}'  # 1: error E731
+
+    honk = lambda self: print('Honk!')     # 2: error E731

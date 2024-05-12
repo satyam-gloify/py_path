@@ -1,0 +1,9 @@
+There are some simple techniques you can use to test parts of your application that have many side effects:
+
+Refactoring code to follow the Single Responsibility Principle
+Mocking out any method or function calls to remove side effects
+Using integration testing instead of unit testing for this piece of the application
+
+If you’re not familiar with mocking, see Python CLI Testingpdf in folderfor some great examples.
+
+

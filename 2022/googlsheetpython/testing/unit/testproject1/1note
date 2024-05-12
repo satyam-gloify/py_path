@@ -1,0 +1,42 @@
+Writing Your First Test Project
+Let’s bring together what you’ve learned so far and, instead of testing the built-in sum() function, test a simple implementation of the same requirement.
+
+Create a new project folder and, inside that, create a new folder called my_sum. Inside my_sum, create an empty file called __init__.py. Creating the __init__.py file means that the my_sum folder can be imported as a module from the parent directory.
+
+project
+    mysum
+        init
+        
+Open up my_sum/__init__.py and create a new function called sum(), which takes an iterable (a list, tuple, or set) and adds the values together:
+
+
+python -m unittest test
+This will execute the same test module (called test) via the command line.
+
+ python -m unittest -v test
+ for verbose output
+
+
+ $ python -m unittest discover
+ This will search the current directory for any files named test*.py and attempt to test them.
+
+
+ Once you have multiple test files, as long as you follow the test*.py naming pattern, you can provide the name of the directory instead by using the -s flag and the name of the directory:
+    python -m unittest discover -s tests
+
+
+
+Lastly, if your source code is not in the directory root and contained in a subdirectory, for example in a folder called src/, you can tell unittest where to execute the tests so that it can import the modules correctly with the -t flag:
+python -m unittest discover -s tests -t src
+
+... framworktestings
+
+#Handling Expected Failures
+
+Earlier, when you made a list of scenarios to test sum(), a question came up: What happens when you provide it with a bad value, such as a single integer or a string?
+
+In this case, you would expect sum() to throw an error. When it does throw an error, that would cause the test to fail.
+
+There’s a special way to handle expected errors. You can use .assertRaises() as a context-manager, then inside the with block execute the test steps:
+
+example:

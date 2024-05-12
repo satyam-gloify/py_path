@@ -1,0 +1,23 @@
+django.test.TestCase instead of unittest.TestCase. These classes have the same API, but the Django TestCase class sets up all the required state to test.
+
+To execute your test suite, instead of using unittest at the command line, you use manage.py test:
+
+python manage.py test
+
+If you want multiple test files, replace tests.py with a folder called tests, insert an empty file inside called __init__.py, and create your test_*.py files. Django will discover and execute these.
+
+... djago flask
+
+More Advanced Testing Scenarios
+
+Before you step into creating tests for your application, remember the three basic steps of every test:
+
+    Create your inputs
+    Execute the code, capturing the output
+    Compare the output with an expected result
+
+It’s not always as easy as creating a static value for the input like a string or a number. Sometimes, your application will require an instance of a class or a context. What do you do then?
+
+The data that you create as an input is known as a fixture. It’s common practice to create fixtures and reuse them.
+
+If you’re running the same test and passing different values each time and expecting the same result, this is known as parameterization.

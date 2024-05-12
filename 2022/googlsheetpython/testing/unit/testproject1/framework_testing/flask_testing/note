@@ -1,0 +1,8 @@
+
+Flask requires that the app be imported and then set in test mode. You can instantiate a test client and use the test client to make requests to any routes in your application.
+
+All of the test client instantiation is done in the setUp method of your test case. In the following example, my_app is the name of the application. Don’t worry if you don’t know what setUp does. You’ll learn about that in the More Advanced Testing Scenarios section.
+...
+You can then execute the test cases using the 
+python -m unittest discover command.
+

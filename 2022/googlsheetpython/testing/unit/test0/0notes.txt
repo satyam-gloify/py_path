@@ -1,0 +1,55 @@
+Testing Your Code
+type:
+    automated
+    manual
+
+The good news is, you’ve probably already created a test without realizing it. Remember when you ran your application and used it for the first time? Did you check the features and experiment using them? That’s known as exploratory testing and is a form of manual testing.
+Exploratory testing is a form of testing that is done without a plan. In an exploratory test, you’re just exploring the application.
+
+menual testing
+    *To have a complete set of manual tests, all you need to do is make a list of all the features your application has, the different types of input it can accept, and the expected results. Now, every time you make a change to your code, you need to go through every single item on that list and check it.
+
+    that doesn’t sound like much fun, does it?
+
+Automated testing
+    This is where automated testing comes in. Automated testing is the execution of your test plan (the parts of your application you want to test, the order in which you want to test them, and the expected responses) by a script instead of a human. Python already comes with a set of tools and libraries to help you create automated tests for your application. We’ll explore those tools and libraries in this tutorial.
+
+
+Unit Tests vs. Integration Tests    
+    it’s time to go a level deeper.
+
+Integration Test
+    An integration test checks that components in your application operate with each other
+    Think of how you might test the lights on a car. You would turn on the lights (known as the test step) and go outside the car or ask a friend to check that the lights are on (known as the test assertion). Testing multiple components is known as integration testing.
+
+    -A major challenge with integration testing is when an integration test doesn’t give the right result. It’s very hard to diagnose the issue without being able to isolate which part of the system is failing. If the lights didn’t turn on, then maybe the bulbs are broken. Is the battery dead? What about the alternator? Is the car’s computer failing,
+
+Unit Test
+ unit test is a smaller test, one that checks that a single component operates in the right way. A unit test helps you to isolate what is broken in your application and fix it faster.
+
+ examply: 
+    0test_sum.py
+    1test_sum_tuple.py
+
+    Here you can see how a mistake in your code gives an error on the console with some information on where the error was and what the expected result was.
+
+    Writing tests in this way is okay for a simple check, but what if more than one fails? This is where test runners come in. The test runner is a special application designed for running tests, checking the output, and giving you tools for debugging and diagnosing tests and applications.
+
+Choosing a Test Runner
+    There are many test runners available for Python. The one built into the Python standard library is called unittest.
+    The three most popular test runners are:
+
+    *unittest
+    *nose or nose2
+    *pytest
+
+Unit TESt
+unittest has been built into the Python standard library since version 2.1. 
+unittest contains both a testing framework and a test runner. unittest has some important requirements for writing and executing tests.
+
+unittest requires that:
+
+You put your tests into classes as methods
+You use a series of special assertion methods in the unittest.TestCase class instead of the built-in assert statement
+
+example test_sum_unittest.py
