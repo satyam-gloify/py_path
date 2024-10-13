@@ -1,0 +1,87 @@
+*
+The font on the site is currently sans serif, but we should have it be serif in case we ever want to highlight VoiceTown examples. We could use Georgia, Times New Roman, Bodoni, or another like those fonts.  (As long as the capital I has lines on top and bottom, it will work.) Looks like the capital I doesn’t have lines at the top and bottom, so we may want to change the font if possible.  
+
+
+* TIMES Roman has an I which has a top/bottom bar
+
+* Logo is distorted: Need a different version/resolution of logo This is still the case : Home page at the top left (the bar that appears on everypage)
+
+* The site needs to say “MyAccentTrainer” right at the top so when users arrive they know they are in the right place  I agree. Top priority change before we launch.
+
+The animated graphic is nice, but to me it implies there will be an app since he is on his phone.  What if you put that one at the bottom and the other at the top? Or find another : one for the top?  Will students be able to use I-pads and notebooks to view this?
+
+* The icons that go with these blurbs seem a little busy to me. Also, maybe they should be blue so they match the site theme? 
+
+
+* Only the word Join should be capitalized in the following sentence: “Join Our 547,452 Happy Students​ Today!”  Should we 
+	even have this on there?
+	The following changes still need to be made
+	“Here are four things that our students say after using VoiceTown:
+	1- Their English pronunciation and understandability have improved.
+	2- Their listening skills have improved and they can understand English speakers better.
+	3-They now know how to correct their mistakes.  What if you change “mistakes” to “pronunciation errors.”
+	4-VoiceTown has helped them gain confidence in joining English conversations.”
+	5.  They say that learning VoiceTown has helped improve their reading.
+
+* Featured Courses - What do you think of calling it “Featured Lessons” - I think it’s okay to list it as Courses since we have “Lessons” listed in the first box. 
+
+
+* The first box should be “VoiceTown Lessons and Pronunciation Tips.”
+	There should be three additional boxes - 
+	 Life in America or whatever we decide to call it.
+	Professional Vocabulary
+	TOEFL/IELTS Test Preparation
+
+	Change thumbnail to “VoiceTown Lessons”
+	image
+	“VoiceTown Lessons and Pronunciation Tips”
+	First Box ⇒  voiceTown Lessons and Pronunciation tips.
+	Second box ⇒ Life in America
+
+	Third Box ⇒ Professional Vocabularies.
+	Fourth Box ⇒ TOEFL Preparations.
+
+
+* Vocab should be Prof Vocab and on clicking should display all the options and same option applies to Life in America options
+image punctuation
+6.  Do we want to put student testimonials somewhere?  At the bottom?  Or a tab at the top?  I have pictures and comments if we do.: Nov 24, 2021=>  3 or 6 students testimonials.==> Send me the content along with name
+
+
+Our Story: 
+Higher resolution photos of George and Nina
+I think there is a bit too much white space. If we use similarly sized photos, we can move the photos and text over to the left. Also, personally I am not a fan of the center alignment for the text on this page. It works for the homepage, but I believe a right alignment (the same as the blog formatting) would look better here.  Sounds good.  I can try to get a better picture of me.  I will check with George’s family again for a picture.  Do we have different pictures yet? This page still needs reformatting and I also think each name should be in a bigger font.
+
+
+* Blog header: I don’t think we need it to say “Worth Reading.” I am on the fence about keeping “for non-Native speakers” (We talked about using “neutral English” or “speak like a local” or something like that.) as it could be for native speakers that struggle with pronunciation as well. I am also not sure about the photo here. I think we need something that implies “science” or “learning”
+
+* Worth reading should be replaced by BLOG.
+
+*Deanna - is this graphic something you could design for us to see?
+	I am still waiting for my sister to improve my story on George.  We can always change it out when she gets it done.
+
+	Log In:
+	“Log in to MyAccentTrainer, a scientific way to learn the English accent”  Should it say a neutral accent?
+	When you are on this page or the sign up page, the tabs at the top of the website disappear. Is there a way to keep them visible?
+
+* 	When you click other courses besides the Basic Lessons, the site recommends that users do basics first. I like this, but think the text should read something like “We recommend students learn the Basics and Pronunciation first”. Also, the button at the bottom should be rounded at the corners like the other site buttons. 
+
+
+
+* When you try to click on a Lesson without being logged in, it asks you to log*  in first. I like this, but it should say “Lesson content locked” instead of “Lecture content locked” for consistency a
+
+
+
+* There is a button at the top that says “Complete and Continue”. Format wise, I think the white outline should be removed for design consistency, but I am also a bit confused by what the button means. Maybe it should say something like “Next Lesson” since if you click it, a new button shows up that says “Previous Lecture”. This button should say “Previous Lesson”
+
+* Under “All Courses” when you are signed in, you can sort by category and by author. Will the category correlate with a bundle, like “Student” or “Professional”? I don’t know if we need to be able to sort by author since they will all be VoiceTown.
+
+* Where will customers find the coupon code? Is it something that will go out in an email? I am thinking we could also let people know on social media as long as they follow the page and share with a friend or something like that. 
+
+* On the Lessons page where you enroll, it shows the basic lessons, but I think we should remove where it says “Why VoiceTown” in this section and just have it say, basic lessons. Same with Toefl preparation, we can just have it say this once.
+* On the purchase screen, I think the bottom button can just say “Buy Now” and we can omit the dollar amount.
+All previous changes need to be made.
+
+* Footer:
+“A Scientific Way to Learn the English Accent”   I like this.  Should we add neutral English or American English Accent?
+Footer formatting and alignment should be consistent on each page if it has the same content.
+
