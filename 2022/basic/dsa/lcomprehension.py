@@ -21,11 +21,14 @@ print(pairs)  # Output: [(1, 3), (1, 4), (2, 3), (2, 4)]
 
 filtered_numbers = [n for n in numbers if n % 2 == 0 and n > 3]
 
+even = [2*i for i in range(1,11)]
+print(even)
 
-
-
-
-
+even = [2*i for i in range(1,11) if i%3==0]
+print(even)
+# list any all sorted len max min sum
+# append clear insert index remove count pop sort reverse
+print(list(even))
 # Dictionary Comprehension
 
 # {key_expression: value_expression for item in iterable if condition}
