@@ -44,3 +44,6 @@ print(inverted_dict)
 
 # 2. Set Comprehensions
 # {expression for item in iterable if condition}
+
+a=[[[1,2],[3,4],5],[6,7]]
+print(4 in a)
