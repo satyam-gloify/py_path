@@ -111,6 +111,7 @@ print(bin(current_flags))  # Output: 0b010
 
 print(~5)
 
+#for more can try binary + - * /
 
 
 
