@@ -1,8 +1,10 @@
 from random import choices, gauss, sample, seed,choice,random, randint, randrange, shuffle
+from numpy.random import seed, rand
 
 # seed(7)
 # print(random())
-
+# Python Seed() is used to initialize the random number generator. The random number generator needs a number to start with (a seed value), to be able to generate a random number.
+# If you are not using the seed(n), then it will take time as seed value. seed(n) help us in generating the same value again and again.
 # with a minimum value 2
 # seed(5)
 # print(2+10*random())
@@ -34,3 +36,10 @@ print(sample(list,6))
 
 # Shuffeling a list randomely
 print(shuffle(list))
+
+
+# Generate Python Random Number with NumPy?
+# from numpy.random import seed
+# >>> from numpy.random import rand
+print(seed(7))
+print(rand(3))
