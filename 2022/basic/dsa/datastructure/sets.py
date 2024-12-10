@@ -1,13 +1,14 @@
 ######################Set
 #Set  is immutable(changable). It does not hold duplicate values
 
-myset={4,'99'}
+# myset={4,'99'}
 # myset.add(55)
 # myset.add(5)
 # myset.add(25)
 # myset.add(445)
 
-# Since a set is unordered, there is no way we can use indexing to access or delete its elements. Then, to perform operations on it, Python provides us with a list of functions and methods like discard(), pop(), clear(), remove(), add(), and more. Functions like len() and max() also apply on sets.
+# Since a set is unordered, there is no way we can use indexing to access or delete its elements. Then, to perform operations on it,
+# Python provides us with a list of functions and methods like discard(), pop(), clear(), remove(), add(), and more. Functions like len() and max() also apply on sets.
 # Delete Item from Set 
 # myset.discard(8) # If item not found in the set It doesn't generate error 
 # myset.remove(3) # If item not found in the set It generate error 
@@ -15,7 +16,7 @@ myset={4,'99'}
 # print(myset)
 # myset.clear()
 
-# myset={1, 2, 3, 4, 5, 6, 3.5}
+myset={1, 2, 3, 4, 5, 6, 3.5}
 myset.update([8,9.9])
 print(myset)
 myset.update([22, 2, 3, 4, 5, 6, 3.5])

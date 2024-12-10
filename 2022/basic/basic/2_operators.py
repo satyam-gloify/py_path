@@ -63,3 +63,111 @@ print("Hello" and "World")   # Output: "World" (Both are truthy, so it returns t
 print("" and "World")        # Output: "" (The first value is falsey, so it stops there)
 print("Hello" and "")        # Output: "" (The first value is truthy, so it evaluates and returns the second)
 print("" and "") 
+
+
+# Operators Overloading for all operators
+# What Is Operator Overloading?
+# Normally, operators work for predefined data types. For example:
+# +	__add__(self, other)	Addition
+# -	__sub__(self, other)	Subtraction
+# *	__mul__(self, other)	Multiplication
+# /	__truediv__(self, other)	Division
+# %	__mod__(self, other)	Modulus
+# **	__pow__(self, other)	Power
+# ==	__eq__(self, other)	Equality
+# !=	__ne__(self, other)	Not equal
+# >	__gt__(self, other)	Greater than
+# <	__lt__(self, other)	Less than
+# >=	__ge__(self, other)	Greater than or equal to
+# <=	__le__(self, other)	Less than or equal to
+# []	__getitem__(self, key)	Indexing
+# Advance
+# __str__: Defines the string representation for an object.
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return f"My name is {self.name}"
+
+p = Person("Alice")
+print(p)  # Output: My name is Alice
+
+# Object Representation
+# __repr__: Used for debugging. Should return an unambiguous string.
+def __repr__(self):
+    return f"Person({self.name})"
+
+# Length
+# __len__: Used to define the behavior of len().
+class CustomList:
+    def __init__(self, items):
+        self.items = items
+
+    def __len__(self):
+        return len(self.items)
+
+cl = CustomList([1, 2, 3])
+print(len(cl))  # Output: 3
+
+# Item Access
+# __getitem__: For indexing.
+# __setitem__: For assigning values to indices.
+# # Addition for numbers
+# print(3 + 4)  # Output: 7
+
+# # Concatenation for strings
+# print("Hello" + " World")  # Output: Hello World
+# When you create your own classes, operators like + or - won’t work on objects of those classes unless you overload them using magic methods.
+
+# How to Overload Operators in Python
+# Step 1: Use Magic Methods
+
+# Magic methods start and end with __ (double underscores). Each operator has a corresponding magic method. For example:
+
+# +: __add__
+# -: __sub__
+# *: __mul__
+# /: __truediv__
+
+# Example 1: Overloading +
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        # Overload `+` to add two Point objects
+        return Point(self.x + other.x, self.y + other.y)
+
+    def __repr__(self):
+        return f"Point({self.x}, {self.y})"
+
+# Test the class
+p1 = Point(1, 2)
+p2 = Point(3, 4)
+result = p1 + p2  # This calls p1.__add__(p2)
+print(result)  # Output: Point(4, 6)
+
+
+
+# Overloading Comparison Operators (>, <, ==)
+
+class Box:
+    def __init__(self, volume):
+        self.volume = volume
+
+    def __gt__(self, other):
+        # Overload `>` to compare volumes
+        return self.volume > other.volume
+
+    def __eq__(self, other):
+        # Overload `==` to check equality of volumes
+        return self.volume == other.volume
+
+# Test the class
+box1 = Box(100)
+box2 = Box(150)
+print(box1 > box2)  # Output: False
+print(box1 == box2)  # Output: False

@@ -6,7 +6,7 @@
 
 # print(identity)
 
-# fullname=lambda a,b,: f'full name: {a.title()}  {b.title()}'
+fullname=lambda a,b,: f'full name: {a.title()}  {b.title()}'
 
 def multply(x1,x2):
     x=x1*x2

@@ -1,4 +1,4 @@
-# LLLIIISSSTTT
+# LLLIIISSSTTT = [] , Set ={} ,touple = (), Dictionary = {'':''}
 
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = [n**2 for n in numbers]
@@ -21,7 +21,15 @@ print(pairs)  # Output: [(1, 3), (1, 4), (2, 3), (2, 4)]
 
 filtered_numbers = [n for n in numbers if n % 2 == 0 and n > 3]
 
-
+# Python Tuple Unpacking
+colors=('Red','Green','Blue')
+a,b,c=colors
+print(a,b,c)
+# creating a tuple with a single assignment value
+a=(1)
+print(type(a))
+a=(1,)
+print(type(a))
 
 
 

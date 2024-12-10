@@ -2,7 +2,7 @@ A Comprehensive Python3 Learning Plan for Robotics, ML, and AI
 Building a Strong Foundation
 
 Python Programming Fundamentals:
-Core Concepts: Variables, data types, operators, control flow (loops, conditionals), functions, modules, and packages.
+modules and packages
 Object-Oriented Programming (OOP): Classes, objects, inheritance, polymorphism, and encapsulation.
 Data Structures and Algorithms: Arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, and dynamic programming.   
 Practice: Solve coding challenges on platforms like LeetCode, HackerRank, and Codewars.
