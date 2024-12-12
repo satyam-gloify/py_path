@@ -29,8 +29,10 @@
 
 def zero():
         return 'zero'
+
 def one():
         return 'one'
+
 def indirect(i):
     switcher={
             0:zero,

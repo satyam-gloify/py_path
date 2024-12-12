@@ -8,6 +8,7 @@
 # Example: Tracking power-ups (speed boost, shield, etc.).
 # System Status:
 # Example: Representing which subsystems (disk, network, CPU) are active.
+# print(a<<2)
 
 
 # Let’s take two numbers- 5 and 7. We’ll show you their binary equivalents using the function bin().
@@ -111,6 +112,7 @@ print(bin(current_flags))  # Output: 0b010
 
 print(~5)
 
+# print(~1)
 #for more can try binary + - * /
 
 

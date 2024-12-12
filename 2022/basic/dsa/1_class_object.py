@@ -29,21 +29,3 @@ b=itspower(10)
 print(a**b)
 
 
-# print('What is your name')
-# name = input()
-
-# print('Hi '+name+', How are you?')
-
-# name=input()
-
-# print('Sounds good..!')
-
-# print('How old r u?')
-# age =int(input())
-
-# if(age<18 and age==18):
-#     print("Ohh, I didn't know you are younger")
-# elif(age>18 and age<30):
-#     print('That is great. {age} you knwo I have a question . Are you Married?'.format(age))
-# else:
-#     print('AAo kbhi haveli pe')
