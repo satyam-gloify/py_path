@@ -4,9 +4,9 @@ Learning Path
 
 Python Programming Fundamentals
 
-Variables, data types (numbers, strings, lists, tuples, dictionaries, sets)
-Operators and expressions
-Conditional statements (if, elif, else) and loops (for, while)
+#Variables, data types (numbers, strings, lists, tuples, dictionaries, sets)
+#Operators and expressions
+#Conditional statements (if, elif, else) and loops (for, while)
 Functions: Parameters, return values, and scope
 Introduction to OOP (Object-Oriented Programming): Classes, objects, inheritance, polymorphism
 File Handling: Reading/writing files

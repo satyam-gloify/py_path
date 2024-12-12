@@ -18,6 +18,73 @@ print(list1)
 list1[1:3]=[9,10,11]
 print(list1)
 
+# LLLIIISSSTTT = [] , Set ={} ,touple = (), Dictionary = {'':''}
+
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = [n**2 for n in numbers]
+print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
+
+
+numbers = [1, 2, 3, 4, 5]
+even_squared_numbers = [n**2 for n in numbers if n % 2 == 0]
+print(even_squared_numbers)  # Output: [4, 16]
+
+mylist=[]
+for i in 'anxiety':
+   mylist.append(i)
+print(mylist)
+
+###########################
+# print( [i for i in 'anxiety'])
+
+###################
+# print([i*2 for i in {3,1,2}])
+
+
+#######################Python List Comprehension vs Lambda Expression
+myset={3,1,2}
+makelist=lambda i:list(i)
+mylist=makelist(myset)
+# print(mylist)
+
+# To do this using the map function instead, we write the following code:
+a=list(map(lambda i:i,myset))
+print(a)
+
+######Conditionals in Python List Comprehension
+    #Single Condition
+    # >>> [i for i in range(8) if i%2!=0]
+
+    #Nested condition
+    # >>> [i for i in range(8) if i%2==0 if i%3==0]
+    # output [0, 6]
+
+    # b. if..else in List Comprehension in Python
+    # >>> ["Even" if i%2==0 else "Odd" for i in range(8)]
+
+# ###########Nested List Comprehension in Python
+# simple way 
+# print table for 7 and  8
+# >>> for i in range(7,9):
+#         for j in range(1,11):
+#                print(f"{i}*{j}={i*j}")
+
+# Compresension way
+# >>> [[i*j for j in range(1,11)] for i in range(7,9)]
+
+
+# List Comprehension with Nested Loops:
+
+list1 = [1, 2]
+list2 = [3, 4]
+pairs = [(x, y) for x in list1 for y in list2]
+print(pairs)  # Output: [(1, 3), (1, 4), (2, 3), (2, 4)]
+
+
+# List Comprehension with Multiple Conditions:
+
+filtered_numbers = [n for n in numbers if n % 2 == 0 and n > 3]
+
 
 
 
@@ -134,7 +201,11 @@ for i in {1,3,2}:
 #Now lets try with frozenset
 # {frozenset(1,2):3}#frozenset expected at most 1 arguments, got 2
 {frozenset([1,2]):3}
+# 2. Set Comprehensions
+# {expression for item in iterable if condition}
 
+a=[[[1,2],[3,4],5],[6,7]]
+print(4 in a)
 
 
 
@@ -156,3 +227,35 @@ del mytuple[1]
 # instead del mytuple
 ########Touple Operations
 #same as list 
+
+# Python Tuple Unpacking
+colors=('Red','Green','Blue')
+a,b,c=colors
+print(a,b,c)
+# creating a tuple with a single assignment value
+a=(1)
+print(type(a))
+a=(1,)
+print(type(a))
+
+
+
+
+
+
+
+##############Dict
+# Dictionary Comprehension
+
+# {key_expression: value_expression for item in iterable if condition}
+
+
+# Example 1: Creating a Dictionary from a List
+squared_dict = {n: n**2 for n in numbers} # Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+# Example 2: Creating a Dictionary with a Condition
+even_squared_dict = {n: n**2 for n in numbers if n % 2 == 0} # Output: {2: 4, 4: 16, 6: 36}
+
+# Example 3: Inverting a Dictionary
+inverted_dict = {v: k for k, v in {'a': 1, 'b': 2, 'c': 3}.items()}
+print(inverted_dict)
