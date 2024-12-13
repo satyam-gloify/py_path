@@ -90,3 +90,14 @@ float("2.1e-2")
 # However, this number works even without the float() function.
 
 print(2.1e-2)
+
+
+
+
+# round() rounds off a float to the given number of digits (given by the second argument).
+round(3.777,2) #3.78
+round(3.7,3) #3.7
+round(3.7,-1) #0.0
+round(377.77,-1)#380.0
+
+

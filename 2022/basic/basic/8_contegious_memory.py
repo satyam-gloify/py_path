@@ -193,6 +193,11 @@ set4=set1.copy()
 for i in {1,3,2}:
     print(i)
 
+# set(zip([1,2,3],['a','b','c'])) gives me {(1, ‘a’), (3, ‘c’), (2, ‘b’)} question here why 3,'c' are not in order 
+# When you use set(zip([1, 2, 3], ['a', 'b', 'c'])), Python creates a sequence of tuples [(1, 'a'), (2, 'b'), (3, 'c')] first.
+# When this sequence is converted into a set, Python stores the tuples in an order determined by their hash values, not their insertion order.
+# Thus, {(1, 'a'), (3, 'c'), (2, 'b')} appears unordered because of the set's internal structure.
+
 #####################9. The frozenset
 # A frozen set is in-effect an immutable set.
 # frozenset expected at most 1 arguments
