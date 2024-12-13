@@ -6,6 +6,8 @@ It simplifies the management of
 common resource like file streams.
 """
 
+####Make the code cleaner with with stmt
+
 # without using with stmt
 # 1
 file = open('f.ext','w')
@@ -51,9 +53,33 @@ with MyClass('file.txt') as xfile:
 
 #####
 # What are resource descriptors?
-# These are the handles provided by the operating system to access the requested resources. In the following code block, file is a descriptor of the file stream resource.
-
+# handles provided by the operating system to access the
+#  requested resources.
+file = open('hello.txt')
+# in above example the __enter__() method creates a file descriptor
+# and return it the name xfile is reference to that discriptor
 # #
 # In the MessageWriter example provided above, the __enter__() method creates a file descriptor and returns it. The name xfile here is used to refer to the file descriptor returned by the __enter__() method. The block of code which uses the acquired resource is placed inside the block of the with statement. As soon as the code inside the with block is executed, the __exit__() method is called. All the acquired resources are released in the __exit__() method. This is how we use the with statement with user defined objects.
 
 # This interface of __enter__() and __exit__() methods which provides the support of with statement in user defined objects is called Context Manager
+
+
+
+from contextlib import contextmanager
+  
+class MessageWriter(object):
+    def __init__(self, filename):
+        self.file_name = filename
+  
+    @contextmanager
+    def open_file(self):
+        try:
+            file = open(self.file_name, 'w')
+            yield file
+        finally:
+            file.close()
+  
+# usage
+message_writer = MessageWriter('hello.txt')
+with message_writer.open_file() as my_file:
+    my_file.write('hello world')

@@ -1,0 +1,23 @@
+CONFLICT (modify/delete): 2022/basic/dsa/lcomprehension.py deleted in HEAD and modified in upstream/local_init.  Version upstream/local_init of 2022/basic/dsa/lcomprehension.py left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+# Steps to Resolve the Conflict
+Fetch Updates from the Original Repository:
+git remote add upstream <original-repo-url>  # If not already added
+git fetch upstream
+git merge upstream/main  # Replace 'main' with the original branch name
+Check for Conflicts:
+git status
+Resolve the Conflict:
+To keep the file deleted:
+git rm <path-to-file>
+To keep the file (with your changes):
+git checkout --ours <path-to-file>
+git add <path-to-file>
+Mark Conflict as Resolved:
+git add <path-to-file>
+Commit and Push the Changes:
+git commit -m "Resolved conflict: deletion of <filename>"
+git push origin <your-branch>
+Retry the Pull Request:
+Visit the original repository and try creating the PR again.

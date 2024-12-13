@@ -22,15 +22,15 @@
 # 5. Operations on Booleans
 
 # a. Arithmetic
-# >>> True+False #1+0 =1
-# >>> True+True #1+1=2
-# >>> False+False #0+0
-# >>> False-True #0-1 = -1
-# >>> False/True =0.0 #division resutl is float
-# >>> False%True
-# >>> False**False
-# >>> 0//1
-# >>> (True+True)*False+True
+# True+False #1+0 =1
+# True+True #1+1=2
+# False+False #0+0
+# False-True #0-1 = -1
+# False/True =0.0 #division resutl is float
+# False%True
+# False**False
+# 0//1
+# (True+True)*False+True
 
 
 ###b. Relational
