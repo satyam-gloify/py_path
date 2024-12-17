@@ -1,11 +1,11 @@
-eval
-exec
-repr
+# eval
+# exec
+# repr
 
 
-# What is Python Collections Module
-from collections import Counter,defaultdict,OrderedDict,namedtuple
-issubclass(Counter,dict) and issubclass(defaultdict,dict) and issubclass(OrderedDict,dict)
+# # What is Python Collections Module
+# from collections import Counter,defaultdict,OrderedDict,namedtuple
+# issubclass(Counter,dict) and issubclass(defaultdict,dict) and issubclass(OrderedDict,dict)
 
 
 
@@ -18,6 +18,6 @@ issubclass(Counter,dict) and issubclass(defaultdict,dict) and issubclass(Ordered
 # d1<d
 # Python time Objects
 # t=datetime.time(11,59,59,99999)
-date.ctime()
-date.__str__()
+# date.ctime()
+# date.__str__()
 

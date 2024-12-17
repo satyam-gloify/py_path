@@ -19,21 +19,21 @@ with open('data.pkl', 'rb') as file:
 print(loaded_data)
 
 
-import dill
-# The dill module is an extended version of pickle, capable of serializing more complex objects, such as functions, lambdas, and closures.
-# Define a function
-def greet(name):
-    return f"Hello, {name}!"
+# import dill
+# # The dill module is an extended version of pickle, capable of serializing more complex objects, such as functions, lambdas, and closures.
+# # Define a function
+# def greet(name):
+#     return f"Hello, {name}!"
 
-# Serialize the function
-with open('greet.pkl', 'wb') as file:
-    dill.dump(greet, file)
+# # Serialize the function
+# with open('greet.pkl', 'wb') as file:
+#     dill.dump(greet, file)
 
-# Deserialize the function
-with open('greet.pkl', 'rb') as file:
-    loaded_function = dill.load(file)
+# # Deserialize the function
+# with open('greet.pkl', 'rb') as file:
+#     loaded_function = dill.load(file)
 
-print(loaded_function('Alice'))
+# print(loaded_function('Alice'))
 
 
 
