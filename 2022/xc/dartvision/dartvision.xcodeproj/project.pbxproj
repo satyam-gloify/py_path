@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B8F32332D1144EA0009A329 /* dartvision Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3B8F32322D1144EA0009A329 /* dartvision Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B8F321D2D1144EA0009A329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B8F31F82D1144E90009A329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B8F31FF2D1144E90009A329;
+			remoteInfo = dartvision;
+		};
+		3B8F32272D1144EA0009A329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B8F31F82D1144E90009A329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B8F31FF2D1144E90009A329;
+			remoteInfo = dartvision;
+		};
+		3B8F32342D1144EA0009A329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B8F31F82D1144E90009A329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B8F32312D1144EA0009A329;
+			remoteInfo = "dartvision Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B8F32522D1144EA0009A329 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3B8F32332D1144EA0009A329 /* dartvision Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B8F32002D1144E90009A329 /* dartvision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dartvision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8F321C2D1144EA0009A329 /* dartvisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dartvisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8F32262D1144EA0009A329 /* dartvisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dartvisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8F32322D1144EA0009A329 /* dartvision Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "dartvision Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3B8F324C2D1144EA0009A329 /* Exceptions for "dartvision Extension" folder in "dartvision Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3B8F32312D1144EA0009A329 /* dartvision Extension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3B8F32022D1144E90009A329 /* dartvision */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = dartvision;
+			sourceTree = "<group>";
+		};
+		3B8F321F2D1144EA0009A329 /* dartvisionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = dartvisionTests;
+			sourceTree = "<group>";
+		};
+		3B8F32292D1144EA0009A329 /* dartvisionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = dartvisionUITests;
+			sourceTree = "<group>";
+		};
+		3B8F32362D1144EA0009A329 /* dartvision Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3B8F324C2D1144EA0009A329 /* Exceptions for "dartvision Extension" folder in "dartvision Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "dartvision Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B8F31FD2D1144E90009A329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32192D1144EA0009A329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32232D1144EA0009A329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F322F2D1144EA0009A329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B8F31F72D1144E90009A329 = {
+			isa = PBXGroup;
+			children = (
+				3B8F32022D1144E90009A329 /* dartvision */,
+				3B8F321F2D1144EA0009A329 /* dartvisionTests */,
+				3B8F32292D1144EA0009A329 /* dartvisionUITests */,
+				3B8F32362D1144EA0009A329 /* dartvision Extension */,
+				3B8F32012D1144E90009A329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B8F32012D1144E90009A329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F32002D1144E90009A329 /* dartvision.app */,
+				3B8F321C2D1144EA0009A329 /* dartvisionTests.xctest */,
+				3B8F32262D1144EA0009A329 /* dartvisionUITests.xctest */,
+				3B8F32322D1144EA0009A329 /* dartvision Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B8F31FF2D1144E90009A329 /* dartvision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8F32532D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvision" */;
+			buildPhases = (
+				3B8F31FC2D1144E90009A329 /* Sources */,
+				3B8F31FD2D1144E90009A329 /* Frameworks */,
+				3B8F31FE2D1144E90009A329 /* Resources */,
+				3B8F32522D1144EA0009A329 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8F32352D1144EA0009A329 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3B8F32022D1144E90009A329 /* dartvision */,
+			);
+			name = dartvision;
+			packageProductDependencies = (
+			);
+			productName = dartvision;
+			productReference = 3B8F32002D1144E90009A329 /* dartvision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B8F321B2D1144EA0009A329 /* dartvisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8F32562D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvisionTests" */;
+			buildPhases = (
+				3B8F32182D1144EA0009A329 /* Sources */,
+				3B8F32192D1144EA0009A329 /* Frameworks */,
+				3B8F321A2D1144EA0009A329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8F321E2D1144EA0009A329 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3B8F321F2D1144EA0009A329 /* dartvisionTests */,
+			);
+			name = dartvisionTests;
+			packageProductDependencies = (
+			);
+			productName = dartvisionTests;
+			productReference = 3B8F321C2D1144EA0009A329 /* dartvisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B8F32252D1144EA0009A329 /* dartvisionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8F32592D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvisionUITests" */;
+			buildPhases = (
+				3B8F32222D1144EA0009A329 /* Sources */,
+				3B8F32232D1144EA0009A329 /* Frameworks */,
+				3B8F32242D1144EA0009A329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B8F32282D1144EA0009A329 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3B8F32292D1144EA0009A329 /* dartvisionUITests */,
+			);
+			name = dartvisionUITests;
+			packageProductDependencies = (
+			);
+			productName = dartvisionUITests;
+			productReference = 3B8F32262D1144EA0009A329 /* dartvisionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3B8F32312D1144EA0009A329 /* dartvision Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B8F324D2D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvision Extension" */;
+			buildPhases = (
+				3B8F322E2D1144EA0009A329 /* Sources */,
+				3B8F322F2D1144EA0009A329 /* Frameworks */,
+				3B8F32302D1144EA0009A329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3B8F32362D1144EA0009A329 /* dartvision Extension */,
+			);
+			name = "dartvision Extension";
+			packageProductDependencies = (
+			);
+			productName = "dartvision Extension";
+			productReference = 3B8F32322D1144EA0009A329 /* dartvision Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B8F31F82D1144E90009A329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					3B8F31FF2D1144E90009A329 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					3B8F321B2D1144EA0009A329 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3B8F31FF2D1144E90009A329;
+					};
+					3B8F32252D1144EA0009A329 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3B8F31FF2D1144E90009A329;
+					};
+					3B8F32312D1144EA0009A329 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B8F31FB2D1144E90009A329 /* Build configuration list for PBXProject "dartvision" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B8F31F72D1144E90009A329;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3B8F32012D1144E90009A329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B8F31FF2D1144E90009A329 /* dartvision */,
+				3B8F321B2D1144EA0009A329 /* dartvisionTests */,
+				3B8F32252D1144EA0009A329 /* dartvisionUITests */,
+				3B8F32312D1144EA0009A329 /* dartvision Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B8F31FE2D1144E90009A329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F321A2D1144EA0009A329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32242D1144EA0009A329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32302D1144EA0009A329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B8F31FC2D1144E90009A329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32182D1144EA0009A329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F32222D1144EA0009A329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8F322E2D1144EA0009A329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B8F321E2D1144EA0009A329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B8F31FF2D1144E90009A329 /* dartvision */;
+			targetProxy = 3B8F321D2D1144EA0009A329 /* PBXContainerItemProxy */;
+		};
+		3B8F32282D1144EA0009A329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B8F31FF2D1144E90009A329 /* dartvision */;
+			targetProxy = 3B8F32272D1144EA0009A329 /* PBXContainerItemProxy */;
+		};
+		3B8F32352D1144EA0009A329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B8F32312D1144EA0009A329 /* dartvision Extension */;
+			targetProxy = 3B8F32342D1144EA0009A329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B8F324E2D1144EA0009A329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "dartvision Extension/dartvision_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dartvision Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "dartvision Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvision.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B8F324F2D1144EA0009A329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "dartvision Extension/dartvision_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dartvision Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "dartvision Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvision.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3B8F32502D1144EA0009A329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B8F32512D1144EA0009A329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3B8F32542D1144EA0009A329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dartvision/dartvision.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = dartvision;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B8F32552D1144EA0009A329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dartvision/dartvision.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = dartvision;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvision";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3B8F32572D1144EA0009A329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dartvision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dartvision";
+			};
+			name = Debug;
+		};
+		3B8F32582D1144EA0009A329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dartvision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/dartvision";
+			};
+			name = Release;
+		};
+		3B8F325A2D1144EA0009A329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = dartvision;
+			};
+			name = Debug;
+		};
+		3B8F325B2D1144EA0009A329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58B2DJW34C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.satyam-gloify.dartvisionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = dartvision;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B8F31FB2D1144E90009A329 /* Build configuration list for PBXProject "dartvision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8F32502D1144EA0009A329 /* Debug */,
+				3B8F32512D1144EA0009A329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8F324D2D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvision Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8F324E2D1144EA0009A329 /* Debug */,
+				3B8F324F2D1144EA0009A329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8F32532D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8F32542D1144EA0009A329 /* Debug */,
+				3B8F32552D1144EA0009A329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8F32562D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8F32572D1144EA0009A329 /* Debug */,
+				3B8F32582D1144EA0009A329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B8F32592D1144EA0009A329 /* Build configuration list for PBXNativeTarget "dartvisionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B8F325A2D1144EA0009A329 /* Debug */,
+				3B8F325B2D1144EA0009A329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B8F31F82D1144E90009A329 /* Project object */;
+}
