@@ -6,7 +6,7 @@ console.log("Content script loaded");
 
 // Define the dark mode CSS
 const darkModeCSS = `
-    html, body, span, applet, object, iframe,
+    html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,7 +17,7 @@ const darkModeCSS = `
     canvas, details, embed, figure, figcaption, footer,
     header, hgroup, menu, nav, output, ruby, section,
     summary, time, mark, audio, video {
-        background-color: #121212 !important;
+        background-color: #222222 !important;
         color: #e0e0e0 !important;
         border-color: #333 !important;
     }
