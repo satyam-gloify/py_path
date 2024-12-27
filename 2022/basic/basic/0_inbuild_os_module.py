@@ -559,9 +559,7 @@ print(dir(os))
 
 # 23 lchflags(path,flags)
 # This Python os Module sets path flags to the numeric flags. Unlike chflags(), ut doesn’t follow symbolic links.
-
 # The flags may be one of the following values, or a bitwise OR combination of:
-
 # UF_NODUMP − Do not dump the file
 # UF_IMMUTABLE − The file may not be changed
 # UF_APPEND − The file may only be appended to
@@ -573,3 +571,69 @@ print(dir(os))
 # SF_NOUNLINK − The file may not be renamed or deleted
 # SF_SNAPSHOT − The file is a snapshot file.
 
+# Key Difference
+# chflags affects the target file that the symbolic link points to.
+# lchflags affects the symbolic link itself.
+import os
+import stat
+# Example flags (platform-specific, may vary):
+flags = stat.UF_IMMUTABLE  # Example: make the file immutable (not deletable or modifiable)
+# File path (can be a symlink or regular file)
+file_path = "example_file"
+symlink_path = "example_symlink"
+# Setting flags on the target file (via the symlink)
+os.chflags(symlink_path, flags)
+# Setting flags on the symlink itself
+os.lchflags(symlink_path, flags)
+# Used in the real
+# File System Security
+# - Immutable Files: Prevent modification, deletion, or renaming of critical files (e.g., system configs or binaries).
+# - Append-Only Files: Ensure logs or other sensitive files are only appended to, not overwritten.
+# Backup and Archiving
+
+# Protect files from changes during backups by making them immutable or append-only.
+# Preserve archive integrity by locking files against accidental edits.
+# Symbolic Link Management
+
+# Use os.lchflags to apply flags specifically to symlinks without altering their target.
+# Maintain symlink properties for specialized file systems or deployment tools.
+# System Administration
+
+# Automate flag configuration for file system maintenance.
+# Mark temporary or sensitive files to restrict their modification or deletion.
+# Forensics and Incident Response
+
+# Lock files or logs as immutable to preserve evidence during investigations.
+# Ensure files remain unchanged in compromised systems.
+
+
+
+# 24. lchmod(path,mode)
+# lchmod() Python os Module ters the path mode to the numeric mode. If the path is a symlink,
+# it affects the symlink, not the target.
+# The mode may be one of the following values, or a bitwise OR combination of:
+
+# stat.S_ISUID − Set user ID on execution
+# stat.S_ISGID − Set group ID on execution
+# stat.S_ENFMT − Record locking enforced
+# stat.S_ISVTX − Save text image after execution
+# stat.S_IREAD − Read by owner
+# stat.S_IWRITE − Write by owner
+# stat.S_IEXEC − Execute by owner
+# stat.S_IRWXU − Read, write, and execute by owner
+# stat.S_IRUSR − Read by owner
+# stat.S_IWUSR − Write by owner
+# stat.S_IXUSR − Execute by owner
+# stat.S_IRWXG − Read, write, and execute by group
+# stat.S_IRGRP − Read by group
+# stat.S_IWGRP − Write by group
+# stat.S_IXGRP − Execute by group
+# stat.S_IRWXO − Read, write, and execute by others
+# stat.S_IROTH − Read by others
+# stat.S_IWOTH − Write by others
+# stat.S_IXOTH − Execute by others
+# >>> path = "/var/www/html/Today.txt"
+# >>> fd = os.open( path, os.O_RDWR )
+# >>> os.close( fd )
+# >>> os.lchmod( path, stat.S_IXGRP)
+# >>> os.lchmod("/tmp/Today.txt", stat.S_IWOTH)
