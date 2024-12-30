@@ -401,10 +401,17 @@ print(dir(os))
 # print(os.pathconf_names)
 
 
-# 16. fstat(fd)
+# 16. fstat(fd) & 29 lstate(path)
 # Python os Module fstat() returns information about the file pertaining to the fd.
-
 # Let’s take a look at the structure fstat() returns:
+
+# Imagine you’re already holding a book (you’ve already opened it).
+# With fstat(), you’re asking for the details about the book you’re holding:
+# How many pages it has.
+# Who wrote it.
+# When it was published.
+
+# lstat() is helpful when you’re dealing with a symlink (bookmark) and need to know about the link itself, not what it points to.
 
 # st_dev − ID of device containing file
 # st_ino − inode number
@@ -427,33 +434,6 @@ print(dir(os))
 # print (f"GID of the file: {info.st_gid}")
 # os.close(fd)
 
-
-# 16. fstat(fd)
-# Python os Module fstat() returns information about the file pertaining to the fd.
-
-# Let’s take a look at the structure fstat() returns:
-
-# st_dev − ID of device containing file
-# st_ino − inode number
-# st_mode – protection
-# st_nlink − number of hard links
-# st_uid − user ID of owner
-# st_gid − group ID of owner
-# st_rdev − device ID (if special file)
-# st_size − total size, in bytes
-# st_blksize − blocksize for filesystem I/O
-# st_blocks − number of blocks allocated
-# st_atime − time of last access
-# st_mtime − time of last modification
-# st_ctime − time of last status change
-# Sample usage:
-
-# fd = os.open( "Today.txt", os.O_RDWR)
-# info = os.fstat(fd)
-# print (f"File Info: {info}")
-# print (f"UID of the file: {info.st_uid}")
-# print (f"GID of the file: {info.st_gid}")
-# os.close( fd)
 
 # 17. fstatvfs(fd)
 # This Python os module returns information pertaining to the file system containing the file linked with file descriptor fd.
@@ -574,17 +554,17 @@ print(dir(os))
 # Key Difference
 # chflags affects the target file that the symbolic link points to.
 # lchflags affects the symbolic link itself.
-import os
-import stat
-# Example flags (platform-specific, may vary):
-flags = stat.UF_IMMUTABLE  # Example: make the file immutable (not deletable or modifiable)
-# File path (can be a symlink or regular file)
-file_path = "example_file"
-symlink_path = "example_symlink"
-# Setting flags on the target file (via the symlink)
-os.chflags(symlink_path, flags)
-# Setting flags on the symlink itself
-os.lchflags(symlink_path, flags)
+# import os
+# import stat
+# # Example flags (platform-specific, may vary):
+# flags = stat.UF_IMMUTABLE  # Example: make the file immutable (not deletable or modifiable)
+# # File path (can be a symlink or regular file)
+# file_path = "example_file"
+# symlink_path = "example_symlink"
+# # Setting flags on the target file (via the symlink)
+# os.chflags(symlink_path, flags)
+# # Setting flags on the symlink itself
+# os.lchflags(symlink_path, flags)
 # Used in the real
 # File System Security
 # - Immutable Files: Prevent modification, deletion, or renaming of critical files (e.g., system configs or binaries).
@@ -608,7 +588,7 @@ os.lchflags(symlink_path, flags)
 
 
 
-# 24. lchmod(path,mode)
+# 24. lchmod(path,mode) and lchown(path,uid,gid)
 # lchmod() Python os Module ters the path mode to the numeric mode. If the path is a symlink,
 # it affects the symlink, not the target.
 # The mode may be one of the following values, or a bitwise OR combination of:
@@ -637,3 +617,154 @@ os.lchflags(symlink_path, flags)
 # >>> os.close( fd )
 # >>> os.lchmod( path, stat.S_IXGRP)
 # >>> os.lchmod("/tmp/Today.txt", stat.S_IWOTH)
+# import os
+# import stat
+# symlink_path = "example_symlink"
+# Set symlink to read-only mode for everyone
+# os.lchmod(symlink_path, stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+# import os
+# symlink_path = "example_symlink"
+# Change ownership of the symlink (not its target) to user ID 1001 and group ID 1001
+# os.lchown(symlink_path, 1001, 1001)
+
+# Aspect	lchmod (Change Mode)	lchown (Change Ownership)
+# Purpose	Adjusts permissions (who can do what)	Changes ownership (who is responsible)
+# Analogy Action	Setting rules for interacting with the signpost	Assigning responsibility for the signpost
+# Example Use	Making the signpost read-only to prevent tampering	Transferring the signpost’s upkeep to another team
+
+
+# 26. link(src,dst)
+# Analogy: The Master Key
+# Original File (src): Think of this as a master key to a treasure chest.
+# Hard Link (dst): This is like creating an exact duplicate of the master key.
+# Key Details in the Analogy:
+# Same Treasure Chest:
+# Both keys (src and dst) open the same treasure chest (the file's data).
+# If you add or remove treasure (modify the file's content), the change is visible no matter which key you use.
+# Independent Keys:
+# If you lose one key (delete src or dst), the other key still works.
+# Only when all keys are lost (all hard links are deleted) does the treasure chest disappear (the data is removed from disk).
+# No Copying:
+# Unlike duplicating the treasure (copying the file), you’re only making a duplicate key. It doesn’t take extra space for the chest itself (the file’s data).
+# >>> path = "/var/www/html/Today.txt"
+# >>> fd = os.open( path, os.O_RDWR )
+# >>> os.close( fd )
+# >>> dst = "/tmp/Today.txt"
+# >>> os.link( path, dst)
+
+
+# 27 listdir(path)
+# list files and folders in the path last directory
+# path = "/Users/oooo/Documents/py/py_path/2024/py/pj"
+# dirs = os.listdir( path )
+# for file in dirs:
+#     print(file)
+# print(dir(path))
+
+
+# 28 lseek(fd,pos,how) 
+# pos (Position):
+# The offset or position (in bytes) to which the file pointer should move.
+# how (Reference Point):
+# Specifies how the pos argument is interpreted. It determines the reference point for the new position:
+# os.SEEK_SET (0): The offset is relative to the start of the file.
+# os.SEEK_CUR (1): The offset is relative to the current position of the file pointer.
+# os.SEEK_END (2): The offset is relative to the end of the file.
+# fd = os.open( "Today.txt", os.O_RDWR)
+# os.write(fd, "This is test")
+# os.fsync(fd)
+# os.lseek(fd, 0, 0)
+# str = os.read(fd, 100)
+# print(f"Read String is: {str}")
+# os.close( fd )
+
+# 30 major(device)
+# major() takes a raw device number, and extracts the device major number (usually the st_dev or st_rdev field from stat).
+# used to identify if its printer or keyboard etc.
+# Sample usage:
+# >>> path = "/var/www/html/Today.txt"
+# >>> info = os.lstat(path)
+# >>> major_dnum = os.major(info.st_dev)
+# >>> minor_dnum = os.minor(info.st_dev)
+# >>> print(f"Major Device Number: {major_dnum}")
+# >>> print(f"Minor Device Number: {minor_dnum}")
+# List of Major Device Numbers by Category
+# 1. Block Devices (Storage)
+# Block devices are devices that store data in fixed-size blocks (e.g., disks).
+# Device	Major Number	Description
+# SCSI Disk Drives	8	For devices like /dev/sda, /dev/sdb (hard drives).
+# IDE Disk Drives	3	Legacy IDE hard drives (/dev/hda, /dev/hdb).
+# NVMe Drives	259	Modern NVMe storage devices.
+# Loopback Devices	7	Virtual block devices (/dev/loop0, /dev/loop1).
+# RAM Disk	1	In-memory block devices (/dev/ram0).
+# USB Mass Storage	189	USB drives (external storage).
+# 2. Character Devices
+# Character devices provide unbuffered, stream-based access (e.g., terminals, printers).
+# Device	Major Number	Description
+# Serial Ports	4	Legacy serial ports (/dev/ttyS0).
+# Pseudo Terminals (PTYs)	5	For virtual terminals (/dev/ptmx).
+# Parallel Ports	6	Parallel printers (/dev/lp0).
+# Virtual Consoles	7	Text terminals (/dev/tty1).
+# Random Number Generator	1	Random data source (/dev/random).
+# 3. Input Devices
+# Input devices like keyboards and mice.
+# Device	Major Number	Description
+# Keyboards and Mice	13	Input devices (/dev/input).
+# Joysticks	13	Game controllers (/dev/input/js0).
+# 4. Network Devices
+# Network interfaces provide access to networking hardware.
+# Device	Major Number	Description
+# Tun/Tap Devices	10	Virtual network interfaces.
+# Network Block Device	43	Network-based storage devices.
+# 5. Multimedia Devices
+# Audio and video input/output devices.
+# Device	Major Number	Description
+# Audio Devices	14	Sound cards (/dev/dsp).
+# Video Capture Devices	81	Webcams and video devices.
+# 6. Printers
+# Office printers and printing systems.
+# Device	Major Number	Description
+# Parallel Port Printers	6	Printers attached to parallel ports.
+# USB Printers	180	Printers attached via USB.
+# How to Check Major and Minor Numbers
+# To view the major and minor numbers for devices on your system:
+# Using ls -l on /dev:
+# ls -l /dev
+# Example output:
+# brw-rw---- 1 root disk 8, 0 Dec 28 10:00 /dev/sda
+# crw-rw---- 1 root root 4, 0 Dec 28 10:00 /dev/ttyS0
+# The numbers (8, 0 for /dev/sda) represent the major (8) and minor (0) device numbers.
+# Using stat Command:
+# stat /dev/sda
+# Output:
+# Device: 802h/2050d   Inode: 15196    Links: 1
+# Device type: 8,0
+
+
+# 31. makedev(major,minor)
+# This Python os Module takes the minor and major device numbers, and creates a raw device number.
+# Sample usage:
+# >>> path = "/var/www/html/Today.txt"
+# >>> info = os.lstat(path)
+# >>> major_dnum = os.major(info.st_dev)
+# >>> minor_dnum = os.minor(info.st_dev)
+# >>> print(f"Major Device Number: {major_dnum}")
+# >>> print(f"Minor Device Number: {minor_dnum}")
+# >>> dev_num = os.makedev(major_dnum, minor_dnum)
+# >>> print(f"Device Number: {dev_num}")
+
+# 1. Creating Device Files
+# In Unix-like systems, device files (e.g., /dev/sda, /dev/tty) are used to interact with hardware devices.
+# The device ID (generated using os.makedev()) is required when creating or working with these files programmatically.
+# Example: System administrators or scripts may use this when creating new device nodes using system tools like mknod.
+# 2. Systems Programming
+# Low-level tools, drivers, or utilities that manage hardware devices use os.makedev() to encode device IDs for operations such as:
+# Comparing devices.
+# Creating device nodes dynamically.
+# 3. Identifying Devices
+# Combine major and minor numbers retrieved from existing device files (using os.major() and os.minor()) to verify or replicate the same device ID elsewhere.
+# 4. Backups and Restoration
+# Backup utilities may store the major and minor numbers of device files to recreate them later. os.makedev() is used during restoration to generate the correct device ID.
+# 5. Testing and Simulation
+# When simulating device files in unit tests or virtual environments, os.makedev() can be used to generate mock device IDs.
+
