@@ -588,9 +588,10 @@ print(dir(os))
 
 
 
-# 24. lchmod(path,mode) and lchown(path,uid,gid)
-# lchmod() Python os Module ters the path mode to the numeric mode. If the path is a symlink,
-# it affects the symlink, not the target.
+# 24. lchmod(path,mode)
+# lchmod() 
+# Changes the permissions of a symbolic link itself, not the file or directory it points to.
+# If the path is a symlink, it affects the symlink, not the target.
 # The mode may be one of the following values, or a bitwise OR combination of:
 
 # stat.S_ISUID − Set user ID on execution
@@ -631,6 +632,17 @@ print(dir(os))
 # Purpose	Adjusts permissions (who can do what)	Changes ownership (who is responsible)
 # Analogy Action	Setting rules for interacting with the signpost	Assigning responsibility for the signpost
 # Example Use	Making the signpost read-only to prevent tampering	Transferring the signpost’s upkeep to another team
+
+
+
+# 25 lchown(path, uid, gid)
+# Changes the owner (user ID) and group (group ID) of a symbolic link, not the file or directory it points to. 
+# >>> path = "/var/www/html/Today.txt"
+# >>> fd = os.open( path, os.O_RDWR)
+# >>> os.close( fd )
+# >>> os.lchown( path, 500, -1)
+# >>> os.lchown( path, -1, 500)
+
 
 
 # 26. link(src,dst)
