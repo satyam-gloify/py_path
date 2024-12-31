@@ -1,0 +1,59 @@
+31 & 32 Aspect	os.mkdir	os.makedirs
+Creates Intermediate Dirs	No (raises FileNotFoundError)	Yes (creates all missing directories)
+Single vs Nested Dirs	Single directory only	Handles both single and nested dirs
+Handles Existing Dir	Raises FileExistsError	Optional (exist_ok=True avoids error)
+Use Case	Simple directory creation	Building complex directory structures
+
+
+33. minor(device) & major(device)
+In Unix-like systems, device files are special files in the /dev directory that represent hardware devices (e.g., disks, terminals, printers). These files are associated with a device ID, which consists of two parts:
+
+Major Number: Identifies the type of device (e.g., disk, terminal).
+Minor Number: Identifies a specific device instance within that type (e.g., a specific disk partition).
+Use Case: Helps identify the type of device associated with the device ID.
+device: A device ID, typically retrieved using os.stat() or os.lstat() on a device file.
+import os
+# Path to a device file
+device_path = "/dev/sda"
+# Get metadata about the device file
+stat_info = os.stat(device_path)
+# Extract the major and minor device numbers
+major_number = os.major(stat_info.st_rdev)
+print("Major Number:", major_number)
+Example: 8 typically corresponds to SCSI disk devices on Linux.
+- System Administration:
+System tools or scripts can use the major number to group or categorize devices in /dev.
+- Custom Device Drivers: When creating custom device drivers, major numbers are assigned to the driver to define its device type.
+How Device IDs Work
+Device IDs are stored in a special attribute of a file's metadata called st_rdev. You can retrieve it using os.stat() or os.lstat().
+
+Example of Device ID Decomposition
+import os
+# Path to a device file
+device_path = "/dev/sda"
+# Get metadata about the device file
+stat_info = os.stat(device_path)
+# Extract major and minor numbers
+major_number = os.major(stat_info.st_rdev)
+minor_number = os.minor(stat_info.st_rdev)
+print("Device ID:", stat_info.st_rdev)
+print("Major Number:", major_number)
+print("Minor Number:", minor_number)
+Output (example):
+Device ID: 2048
+Major Number: 8
+Minor Number: 0
+Here:
+Major Number 8: Represents a block storage device (SCSI disk).
+Minor Number 0: Represents the first disk (/dev/sda).
+
+List of Major Device Numbers by Category
+1. Block Devices (Storage)
+Block devices are devices that store data in fixed-size blocks (e.g., disks).
+Device	Major Number	Description
+SCSI Disk Drives	8	For devices like /dev/sda, /dev/sdb (hard drives).
+IDE Disk Drives	3	Legacy IDE hard drives (/dev/hda, /dev/hdb).
+NVMe Drives	259	Modern NVMe storage devices.
+Loopback Devices	7	Virtual block devices (/dev/loop0, /dev/loop1).
+RAM Disk	1	In-memory block devices (/dev/ram0).
+USB Mass Storage	189	USB drives (external storage).
